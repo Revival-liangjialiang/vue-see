@@ -61,8 +61,15 @@ property/属性
   * c：Image description, default '',not required/图片描述，默认空，非必需
 > 建议正确设置图片宽高，达到最佳效果
 
-## Other/其他
-
-* [基于Vue2.0高仿微信App的单页应用](https://github.com/zhaohaodang/vue-WeChat)
+修改样式：
+   /*预览图片的总盒子*/
+  .evaluate_img_box{padding-left: 2.1rem;margin-top: 0.5rem;}
+  /*孩子图片盒子*/
+  .evaluate_img{width: 4.15rem;height: 4.15rem;margin-right: 0.25rem; display: inline-block;}
+  .evaluate_img img{width: 4.15rem;height: 4.15rem;}
+  /*调整打开后图片的位置和大小*/
+  .pswp__zoom-wrap{width: 16rem;height: 16rem;top: 50%;position: relative; transform:translate(0,-50%) !important;}
+  /*去掉放大按钮和分享按钮*/
+  .pswp__button--fs,.pswp__button--share{display: none !important; }
 
 
