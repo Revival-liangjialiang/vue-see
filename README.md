@@ -71,5 +71,7 @@ property/属性
   .pswp__zoom-wrap{width: 16rem;height: 16rem;top: 50%;position: relative; transform:translate(0,-50%) !important;}
   /*去掉放大按钮和分享按钮*/
   .pswp__button--fs,.pswp__button--share{display: none !important; }
-
-
+        组件标签
+        <see-box class="evaluate_img_box">
+            <see-item v-for="(item,index) in imgList" :key="index" :img="item" class="evaluate_img"></see-item>
+        </see-box>
