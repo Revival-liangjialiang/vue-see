@@ -67,11 +67,19 @@ property/属性
   /*孩子图片盒子*/
   .evaluate_img{width: 4.15rem;height: 4.15rem;margin-right: 0.25rem; display: inline-block;}
   .evaluate_img img{width: 4.15rem;height: 4.15rem;}
-  /*调整打开后图片的位置和大小*/
-  .pswp__zoom-wrap{width: 16rem;height: 16rem;top: 50%;position: relative; transform:translate(0,-50%) !important;}
   /*去掉放大按钮和分享按钮*/
   .pswp__button--fs,.pswp__button--share{display: none !important; }
         组件标签
         <see-box class="evaluate_img_box">
             <see-item v-for="(item,index) in imgList" :key="index" :img="item" class="evaluate_img"></see-item>
-        </see-box>
+        </see-box>
+需要注意的一点，我们需要动态的获取屏幕的宽度然后加入到json数据中，以到达控制放大图的尺寸
+ imgList: [{
+                u: 'http://localhost/element/img/findtwo_03.png',
+                w:320,
+                h:320
+            }, {
+                u: 'http://localhost/element/img/dd.png',
+                w:320,
+                h:320
+            }]
